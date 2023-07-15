@@ -133,8 +133,8 @@ jobs:
 
       - name: Zip artifacts
         run: |
-          zip playwright-test-report.zip playwright-test-report -r
-          zip unit-test-report.zip unit-test-report -r 
+          zip playwright-test-report.zip ./playwright-test-report/* -r
+          zip unit-test-report.zip ./unit-test-report/* -r 
 
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
