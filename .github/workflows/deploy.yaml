@@ -128,6 +128,9 @@ jobs:
           includeInvalidCommits: true # to add the full referencing of conventional commits (e.g. ci: is skipped by the action)
           writeToFile: false # just add the references in the release
 
+      - name: Download playwright artifact
+        uses: actions/download-artifact@v3
+
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
         with:
@@ -137,7 +140,7 @@ jobs:
           name: "RELEASE: ${{ github.ref_name }} on ${{ env.NOW }}"
           body: ${{ steps.changelog.outputs.changes }}
           token: ${{ secrets.GITHUB_TOKEN }} 
-          artifacts: "**" # add the test results (use regex to get the artifacts)
+          artifacts: "playwright-test-report,unit-test-report" # add the test results (use regex to get the artifacts)
 
   publish:
     runs-on: ubuntu-latest
