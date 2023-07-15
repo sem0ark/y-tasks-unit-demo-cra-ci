@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/y-tasks-unit-demo-cra-ci/static/css/main.bca2b5ee.css",
+    "main.js": "/y-tasks-unit-demo-cra-ci/static/js/main.7fd664e5.js",
+    "index.html": "/y-tasks-unit-demo-cra-ci/index.html",
+    "main.bca2b5ee.css.map": "/y-tasks-unit-demo-cra-ci/static/css/main.bca2b5ee.css.map",
+    "main.7fd664e5.js.map": "/y-tasks-unit-demo-cra-ci/static/js/main.7fd664e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca2b5ee.css",
+    "static/js/main.7fd664e5.js"
+  ]
+}
